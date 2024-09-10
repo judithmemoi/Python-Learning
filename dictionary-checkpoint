@@ -1,0 +1,685 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "8ee676df-a607-4cb8-8c5d-2730f77c2cda",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "my_dictionary={\n",
+    "    \"name\"\"joy\",\n",
+    "    \"age\", 35,\n",
+    "\"salary\", 400\n",
+    "}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "ae9bdb06-5b5e-4efa-8c85-9191bbd801ee",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{400, 35, 'salary', 'age', 'namejoy'}\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(my_dictionary)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "4539783e-e802-44f3-bbfd-d760eeba6af5",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "my_dictionary = {\n",
+    "    \"name\":[\"person 1\", \"person 2\", \"person 3\", \"person 4\"],\n",
+    "            \"age\":[35, 60, 70, 85],\n",
+    "            \"salary\":[400, 300, 500, 560],\n",
+    "}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "07e59ea8-dd99-4e4f-a54f-a801de38b1ce",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'name': ['person 1', 'person 2', 'person 3', 'person 4'], 'age': [35, 60, 70, 85], 'salary': [400, 300, 500, 560]}\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(my_dictionary)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "65aaa620-c31f-4f76-820e-4a3bd0503c91",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "my_dictionary={\n",
+    "    \"name\":[\"person 1\",\"person 2\", \"person 3\", \"person 4\"],\n",
+    "    \"age\":[35, 60, 70, 85],\n",
+    "    \"salary\":[400, 300, 500, 560],\n",
+    "    \"location\":[\"kisumu\", \"nakuru\", \"mombasa\", \"narok\"]}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "2c9a447a-7e45-4000-b225-55823f674dfb",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'name': ['person 1', 'person 2', 'person 3', 'person 4'], 'age': [35, 60, 70, 85], 'salary': [400, 300, 500, 560], 'location': ['kisumu', 'nakuru', 'mombasa', 'narok']}\n"
+     ]
+    }
+   ],
+   "source": [
+    "print (my_dictionary)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "9d425549-00eb-436d-80c3-1b0883775292",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "del my_dictionary[\"location\"]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "75230679-6c3d-44b9-8a3d-c60e0ef78386",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'name': ['person 1', 'person 2', 'person 3', 'person 4'],\n",
+       " 'age': [35, 60, 70, 85],\n",
+       " 'salary': [400, 300, 500, 560]}"
+      ]
+     },
+     "execution_count": 16,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "my_dictionary"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "1912ae74-00a2-4c91-b34e-51f145fe2e9e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import pandas as pd"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4f305943-1afb-4229-a826-a2081c68dda6",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "9476ab68-8afb-4dd4-a242-490b0ad8759e",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'name': ['person 1', 'person 2', 'person 3', 'person 4'],\n",
+       " 'age': [35, 60, 70, 85],\n",
+       " 'salary': [400, 300, 500, 560]}"
+      ]
+     },
+     "execution_count": 18,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "my_dictionary"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "1f213477-4a23-41b4-b501-b6a9a3a22658",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "df=pd.DataFrame(my_dictionary)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "9f109abd-9697-47c8-a92b-7708b04d5905",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>name</th>\n",
+       "      <th>age</th>\n",
+       "      <th>salary</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>person 1</td>\n",
+       "      <td>35</td>\n",
+       "      <td>400</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>person 2</td>\n",
+       "      <td>60</td>\n",
+       "      <td>300</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>person 3</td>\n",
+       "      <td>70</td>\n",
+       "      <td>500</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>3</th>\n",
+       "      <td>person 4</td>\n",
+       "      <td>85</td>\n",
+       "      <td>560</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "       name  age  salary\n",
+       "0  person 1   35     400\n",
+       "1  person 2   60     300\n",
+       "2  person 3   70     500\n",
+       "3  person 4   85     560"
+      ]
+     },
+     "execution_count": 20,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "32300512-9530-4b94-aac3-1c9bb7b70a68",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "0    person 1\n",
+       "1    person 2\n",
+       "2    person 3\n",
+       "3    person 4\n",
+       "Name: name, dtype: object"
+      ]
+     },
+     "execution_count": 21,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df[\"name\"]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "ee239ae4-a9dd-4553-9420-3513c7edf647",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>name</th>\n",
+       "      <th>age</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>person 1</td>\n",
+       "      <td>35</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>person 2</td>\n",
+       "      <td>60</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>person 3</td>\n",
+       "      <td>70</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>3</th>\n",
+       "      <td>person 4</td>\n",
+       "      <td>85</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "       name  age\n",
+       "0  person 1   35\n",
+       "1  person 2   60\n",
+       "2  person 3   70\n",
+       "3  person 4   85"
+      ]
+     },
+     "execution_count": 22,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df[[\"name\", \"age\"]]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "fd28d023-7d00-447c-9ebe-a9ca95329ec4",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "0    36\n",
+       "1    61\n",
+       "2    71\n",
+       "3    86\n",
+       "Name: age, dtype: int64"
+      ]
+     },
+     "execution_count": 23,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df[\"age\"]+1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "0f8847d7-b4a0-449e-974e-8b06dd9467ae",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "1b0162d3-8f4b-4b79-b785-38cf99144967",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "name      object\n",
+       "age        int64\n",
+       "salary     int64\n",
+       "dtype: object"
+      ]
+     },
+     "execution_count": 24,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df.dtypes"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "id": "698b22d8-aff7-42f9-8ce2-ffb4005ffee8",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "df[\"age\"] = df[\"age\"]+1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "id": "95566210-07fe-4eec-af05-2ecdeaa746fd",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>name</th>\n",
+       "      <th>age</th>\n",
+       "      <th>salary</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>person 1</td>\n",
+       "      <td>37</td>\n",
+       "      <td>400</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>person 2</td>\n",
+       "      <td>62</td>\n",
+       "      <td>300</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>person 3</td>\n",
+       "      <td>72</td>\n",
+       "      <td>500</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>3</th>\n",
+       "      <td>person 4</td>\n",
+       "      <td>87</td>\n",
+       "      <td>560</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "       name  age  salary\n",
+       "0  person 1   37     400\n",
+       "1  person 2   62     300\n",
+       "2  person 3   72     500\n",
+       "3  person 4   87     560"
+      ]
+     },
+     "execution_count": 28,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "id": "3624a7db-8f9c-4371-88d3-74bf0f05af98",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "my_dictionary={\n",
+    "    \"name\":[\"jane\", \"joy\", \"june\", \"janet\"],\n",
+    "    \"age\":[20, 50, 30, 40],\n",
+    "    \"salary\":[233, 333, 433, 533],\n",
+    "    \"location\":[\"nakuru\", \"narok\", \"kericho\", \"nairobi\"]}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "id": "2ae50295-a6ff-40c2-b5db-2d970c4c3a56",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'name': ['jane', 'joy', 'june', 'janet'],\n",
+       " 'age': [20, 50, 30, 40],\n",
+       " 'salary': [233, 333, 433, 533],\n",
+       " 'location': ['nakuru', 'narok', 'kericho', 'nairobi']}"
+      ]
+     },
+     "execution_count": 33,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "my_dictionary"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "id": "c51e1800-aea1-4a45-8d63-ae5d6a25814e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "df=pd.DataFrame(my_dictionary)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "id": "9c3621c8-343f-49c7-a3a6-5002a59aa196",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "df[\"age\"],df[\"salary\"]=df[\"age\"]+1, df[\"salary\"]+500"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4387280e-c781-480a-b81c-b45fe7616275",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "id": "3a98a021-29e5-4043-a3ba-e1adc1e429a8",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>name</th>\n",
+       "      <th>age</th>\n",
+       "      <th>salary</th>\n",
+       "      <th>location</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>jane</td>\n",
+       "      <td>21</td>\n",
+       "      <td>733</td>\n",
+       "      <td>nakuru</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>joy</td>\n",
+       "      <td>51</td>\n",
+       "      <td>833</td>\n",
+       "      <td>narok</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>june</td>\n",
+       "      <td>31</td>\n",
+       "      <td>933</td>\n",
+       "      <td>kericho</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>3</th>\n",
+       "      <td>janet</td>\n",
+       "      <td>41</td>\n",
+       "      <td>1033</td>\n",
+       "      <td>nairobi</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "    name  age  salary location\n",
+       "0   jane   21     733   nakuru\n",
+       "1    joy   51     833    narok\n",
+       "2   june   31     933  kericho\n",
+       "3  janet   41    1033  nairobi"
+      ]
+     },
+     "execution_count": 37,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "2f504665-36fb-4364-a3dd-f402b2784582",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "d"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.4"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
